@@ -1,0 +1,240 @@
+:root {
+    --color-Lightblue: #f3f5fc;
+    --color-Dark-blue: #0A3871;
+    --color-gris:#D8DFE8;
+    --color-blanco: #FFFFFF;
+    --color-gris2: #495057;
+    --color-gris3:#343A40;
+    --color--background: (var(--color-Lightblue))
+}
+
+
+body{
+    background-color: var(--color-Lightblue);
+}
+
+*/desarollo de header*/
+header{
+    background-color: var( --color-Lightblue);
+}
+.header {
+    background-color: var(--color-Lightblue);
+    width: 90%;
+    margin: auto;
+}
+
+
+/* modificacion del logo superior de alura*/
+.logoalura {
+    margin-top: 40px;
+
+}
+
+
+/*main*/
+.main {
+    background-color: var(--color-Lightblue);
+    width: 80.5%;
+    margin: auto 40px auto auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-height: calc(100vh - 91px - 72px);
+    align-items: end;
+}
+
+
+
+/*lodo izquierdo de la pagina*/
+
+.izquierda {
+    font-family: inter;
+  background-color: var(--color-Lightblue);
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*Primer elemento el texto superior*/
+
+.Ingrese__texto {
+    font-family: Inter;
+    width: 80%;
+    font-size: 32px;
+    color: var(--color-Dark-blue);
+    resize: none;
+    background: none;
+    border: none;
+    outline: none;
+    line-height: 48px;
+}
+
+.Ingrese__texto::placeholder {
+    color: var(--color-Dark-blue);
+}
+
+
+/*Abajo botones de encriptar y terminos*/
+
+.izquierda__abajo {
+    background-color: var(--color-Lightblue);
+}
+.terminos{
+    font-family: Inter;
+    color: var(--color-gris2);
+    width: 205px;
+    height: 18px;
+    gap: 0px;
+    opacity: 0.8px;
+
+}
+.abajo__botones{
+    gap: 24px;
+    margin-top: 16px;  
+    flex-wrap: wrap ;
+}
+
+/*propiedades de los botones*/
+
+.Boton__Encriptar,
+.Boton__Desencriptar, .Boton__copiar {
+    border: 1px solid var(--color-Dark-blue);
+    cursor: pointer;
+    max-width: 328px;
+    width: 40%;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+
+    
+}
+
+.Boton__Encriptar {
+ background-color: var(--color-Dark-blue);
+ color: var(--color-blanco);
+ border: none;
+}
+
+.Boton__Desencriptar {
+ background-color: var(--color-gris);
+ color: var(--color-Dark-blue);
+}
+
+/*Inicia modificación lodo derecho de la pagina*/
+
+.derecha {
+    background-color: var(--color-blanco);
+    height: calc(100% + 48);
+    border-radius: 32px;
+    padding: 32px;
+    box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 32px;
+   align-items: center;
+   box-shadow: 0px 24px 32px -8px ;
+}
+
+.derecha.ajustar{
+    justify-content: space-between;
+}
+/*.Mensaje__final{
+    height: 70%;
+}*/
+
+
+/*Inicia modificación modificación del muñeco*/
+
+.muñeco {
+    width: 100%;
+}
+.oculto {
+    display: none;
+}
+
+
+/*Inicia modificación modificación del Boton para mensaje final*/
+.Mensaje__final {
+     font-family: inter;
+     background-color:var(--color-blanco);
+     font-size: 24px;
+     font-weight: 700;
+     text-align: center;
+     border: none;
+     outline: none;
+     resize: none;
+}
+.Mensaje__final.ajustar {
+     height: 80%;
+     font-family: Inter;
+     font-size: 24px;
+     font-weight: 400;
+     line-height: 36px;
+     text-align: left;
+     color: var(--color-gris2);
+}
+
+.Mensaje__final::placeholder {
+color: var(--color-gris2);
+}
+.Mensaje__final2{
+    color: var(--color-gris2);
+    font-size: 16px;
+    text-align: center;
+}
+
+/*Inicia modificación modificación del Boton para copiar*/
+.Boton__copiar {
+    width: 100%;
+    display: none;
+    background: transparent;
+    color: var(--color-Dark-blue);
+}
+
+
+/*pie de la pagina
+footer {
+    background-color: aqua;
+    width: 50px ;
+}
+*/
+
+@media screen and (max-width: 800px) {
+.main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 75% auto;
+        width: auto;
+        margin: auto 40px;
+    }
+}
+.derecha {
+    height: 100%;
+}
+
+
+.abajo__botones {
+    justify-content: center;
+}
+
+.Boton__Encriptar,
+.Boton__Desencriptar {
+    width: 45%;
+}
+
+
+@media screen and (max-width:500px){
+ .main{
+    margin: auto 16px;
+ }
+
+ .Boton__Encriptar,
+ .Boton__Desencriptar {
+    max-width: none;
+    width: 100%;
+}
+
+}
+
+
+
