@@ -1,161 +1,187 @@
 :root {
-    --color-Lightblue: #f3f5fc;
-    --color-Dark-blue: #0A3871;
-    --color-gris:#D8DFE8;
-    --color-blanco: #FFFFFF;
-    --color-gris2: #495057;
-    --color-gris3:#343A40;
-    --color--background: (var(--color-Lightblue))
+     --color-Lightblue: #f3f5fc;
+     --color-Dark-blue: #0A3871;
+     --color-gris:#D8DFE8;
+     --color-blanco: #FFFFFF;
+     --color-gris2: #495057;
+     --color-gris3:#343A40;
+     --color--background: (var(--color-Lightblue))
 }
 
 
 body{
-    background-color: var(--color-Lightblue);
+     background-color: var(--color-Lightblue);
+     height: 1200px;
+     width: 1440;
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 85.3334% 14.6666%;   
+     margin: 0%; 
+}
+.cuerpo{
+     display: grid;
+     grid-template-columns: 8.428% 47.753% 27.7777%;
+     column-gap: 6.9444%;
+     background-color: var(--color-Lightblue);
+     width: 100%;
+     height: 100%;
+   
 }
 
-*/desarollo de header*/
-header{
-    background-color: var( --color-Lightblue);
+/*desarollo de header*/
+.header{
+     grid-column: 1;
+     position: relative;
+     background-color: var(--color-Lightblue);
+     height: 100%;
+     width: 100%;
+    
 }
-.header {
-    background-color: var(--color-Lightblue);
-    width: 90%;
-    margin: auto;
-}
-
-
-/* modificacion del logo superior de alura*/
 .logoalura {
-    margin-top: 40px;
-
+     position: absolute;
+     top: 3.9063%;
+     height: 4.6875%;
+     width: 100%;
+     
 }
-
-
-/*main*/
-.main {
-    background-color: var(--color-Lightblue);
-    width: 80.5%;
-    margin: auto 40px auto auto;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    min-height: calc(100vh - 91px - 72px);
-    align-items: end;
-}
-
-
 
 /*lodo izquierdo de la pagina*/
-
-.izquierda {
-    font-family: inter;
-  background-color: var(--color-Lightblue);
-  height: 85%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.izquierda{
+     position: relative;
+     font-family: inter;
+     background-color: var(--color-Lightblue);
+     width: 100%;
+     height: 100%;
+     grid-column: 2;
+  
 }
-
 /*Primer elemento el texto superior*/
-
 .Ingrese__texto {
-    font-family: Inter;
-    width: 80%;
-    font-size: 32px;
-    color: var(--color-Dark-blue);
-    resize: none;
-    background: none;
-    border: none;
-    outline: none;
-    line-height: 48px;
+     position: absolute;
+     font-family: Inter;
+     font-size: 32px;
+     color: var(--color-Dark-blue);
+     resize: none;
+     background: none;
+     border: none;
+     outline: none;
+     line-height: 48px;
+     width: 83.912%;
+     height: 48.829%;
+     top: 16.40625%;
+     gap: 0px;
+     opacity: 0px;
+     padding: 0;
 }
-
 .Ingrese__texto::placeholder {
     color: var(--color-Dark-blue);
 }
-
-
 /*Abajo botones de encriptar y terminos*/
-
 .izquierda__abajo {
-    background-color: var(--color-Lightblue);
+     position: absolute;
+     background-color: var(--color-Lightblue);
+     top: 83.10546875%;
+     width: 100%;
+     height: 9.8633%;
 }
 .terminos{
-    font-family: Inter;
-    color: var(--color-gris2);
-    width: 205px;
-    height: 18px;
-    gap: 0px;
-    opacity: 0.8px;
-
+     position: absolute;
+     font-family: Inter;
+     color: var(--color-gris2);
+     
+     height: 17.831355%;
+     gap: 0px;
+     opacity: 0.8px;
+     font-family: Inter;
+     font-size: 12px;
+     font-weight: 400px;
+     line-height: 18px;
+     text-align: left;
+}
+.vector{
+     position: absolute;
+     height: 15.8416%;
 }
 .abajo__botones{
-    gap: 24px;
-    margin-top: 16px;  
-    flex-wrap: wrap ;
+     position: absolute;
+     display: flex;
+    flex-wrap: wrap;
+     top: 33.66337%;
+     height: 66.337%;
+     width: 100%;    
 }
-
 /*propiedades de los botones*/
-
 .Boton__Encriptar,
 .Boton__Desencriptar, .Boton__copiar {
     border: 1px solid var(--color-Dark-blue);
     cursor: pointer;
-    max-width: 328px;
-    width: 40%;
-    height: 67px;
     border-radius: 24px;
-    font-size: 16px;
-
-    
+    font-size: 16px;    
 }
-
 .Boton__Encriptar {
- background-color: var(--color-Dark-blue);
- color: var(--color-blanco);
- border: none;
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: var(--color-Dark-blue);
+     color: var(--color-blanco);
+     border: none;
+     width: 47.555%;
+     height: 100%;
+     
+}
+.Boton__Desencriptar {
+     position: absolute;
+     display: flex;
+     background-color: var(--color-gris);
+     color: var(--color-Dark-blue);
+     justify-content: center;
+     align-items: center;
+     width: 47.555%;
+     height: 100%;
+     left: 52.447%;
 }
 
-.Boton__Desencriptar {
- background-color: var(--color-gris);
- color: var(--color-Dark-blue);
-}
 
 /*Inicia modificación lodo derecho de la pagina*/
-
 .derecha {
-    background-color: var(--color-blanco);
-    height: calc(100% + 48);
-    border-radius: 32px;
-    padding: 32px;
-    box-sizing: border-box;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   gap: 32px;
-   align-items: center;
-   box-shadow: 0px 24px 32px -8px ;
+     grid-column: 3;
+     position: relative;
+     width: 100%;
+     height: 100%;
+     background-color: var(--color-Lightblue);
 }
+#caja {
+     position: relative;
+     display: flex;
+      background-color: #fff;
+      top: 3.90625%;
+      width: 100%;
+      height: 92.188%;   
+      border-radius: 32px;
+      box-shadow: 0px 24px 32px -8px #00000014;
+      justify-content: center;  
+     
 
-.derecha.ajustar{
-    justify-content: space-between;
+     
+      
 }
-/*.Mensaje__final{
-    height: 70%;
-}*/
-
-
 /*Inicia modificación modificación del muñeco*/
-
 .muñeco {
-    width: 100%;
+     position: absolute;
+     width: 84.004%;
+     height: 32.2035%;
+     top: 29.9789%;
+     gap: 0px;
+     opacity: 0px;
+     
 }
 .oculto {
-    display: none;
+     display: none;
 }
-
-
 /*Inicia modificación modificación del Boton para mensaje final*/
-.Mensaje__final {
+#mensajeFinal{
+    position: absolute;
      font-family: inter;
      background-color:var(--color-blanco);
      font-size: 24px;
@@ -164,77 +190,452 @@ header{
      border: none;
      outline: none;
      resize: none;
+     width: 83.005%;
+     height: 17.0209%;
+     top: 61.33475%;
+     gap: 0px;
+     opacity: 0px;
+
 }
-.Mensaje__final.ajustar {
-     height: 80%;
+#mensajeFinal.ajustar {
+     position: absolute;
+     height: 82.31%;
      font-family: Inter;
      font-size: 24px;
      font-weight: 400;
      line-height: 36px;
-     text-align: left;
+     top: 3.3899%;
+     resize: none; 
      color: var(--color-gris2);
+
 }
 
 .Mensaje__final::placeholder {
-color: var(--color-gris2);
+     color: var(--color-gris2);
 }
-.Mensaje__final2{
-    color: var(--color-gris2);
-    font-size: 16px;
+#mensajeFinal2{
+     position: absolute;
+     font-size: 16px;
+     text-align: center;
+     width: 84.004%;
+     height: 5.086%;
+    top: 69.17373%;
+     margin: 0;
+     gap: 0px;
+     opacity: 0px;
+     font-family: Inter;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 24px;
     text-align: center;
 }
-
 /*Inicia modificación modificación del Boton para copiar*/
 .Boton__copiar {
-    width: 100%;
-    display: none;
-    background: transparent;
-    color: var(--color-Dark-blue);
+     position: absolute;
+     width: 84.004%;
+     top: 89.51271%;
+     left: 8%;
+     display: none;
+     background: transparent;
+     color: var(--color-Dark-blue);
+     
+     height: 67px;
 }
 
 
-/*pie de la pagina
-footer {
-    background-color: aqua;
-    width: 50px ;
+/*pie de la pagina*/
+footer.piePagina {
+      position: relative;
+      background-color: #000;
+      width: 100%;
+      height: 100%;
+      grid-column: 1;
+      grid-row: 2;
+      display: flex;
+     justify-content: center;
+      align-items: center;
 }
-*/
+.logoBalam{
+    
+    width: 10%;
+    height: 50%;
+    display: flex;  
+    
+}
+
+.pie{
+    
+    display: flex;
+    color: #fff;
+    margin: 0%;    
+    width: 90%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    
+   
+}
+
 
 @media screen and (max-width: 800px) {
-.main{
-        grid-template-columns: 1fr;
-        grid-template-rows: 75% auto;
-        width: auto;
-        margin: auto 40px;
-    }
+
+body{
+      display: grid;
+      height: 1500px;
+      width: 800px;
+      grid-template-columns: 100%;
+      grid-template-rows: 90.727% 9.273%;
+      margin: 0%;
 }
-.derecha {
+.cuerpo{
+      display: grid;
+      width: 100%;
+      height: 100%;
+      grid-row: 1;
+      grid-template-columns: 1fr;
+      grid-template-rows: 10.56391% auto 29.465999% ;
+}
+/*MODIFICACIÓN DEL HEADER*/
+.header{
+    position: relative;
+    display: grid;
+    width: 100%;
     height: 100%;
+    grid-row: 1;
+}
+.logoalura{
+     position: absolute;
+     width: 3.9179%;
+     height: 40.464%;
+     top: 58.736%;
+     left: 5.318%;
+     gap: 0px;
+     opacity: 0px;
 }
 
 
-.abajo__botones {
-    justify-content: center;
-}
-
-.Boton__Encriptar,
-.Boton__Desencriptar {
-    width: 45%;
-}
-
-
-@media screen and (max-width:500px){
- .main{
-    margin: auto 16px;
+/*MODIFICACIÓN DEL LADO IZQUIERDO*/
+.izquierda{
+     position: relative;
+     display: grid;
+     grid-column: 1;
+     grid-row: 2;
+     width: 100%;
+     
  }
 
- .Boton__Encriptar,
- .Boton__Desencriptar {
-    max-width: none;
-    width: 100%;
+.Ingrese__texto{
+      position: absolute;
+      top: 13.86%;
+      left: 5.318%;
+      width: 89.584959%;
+      height: 85.315%;
+    
+}
+.izquierda__abajo{
+      top: 85.068429%;
+      width: 89.5833%;
+      height: 12.068%;
+      left: 5%;
+     
+}
+.abajo__botones {
+      display: flex;
+      justify-content: space-between;
+      width: 97%;
+      height:66.341% ;
+      left: 0;
 }
 
+.terminos{
+      width: 229px;
+      font-family: Inter;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: left;
+}
+.Boton__Encriptar{
+      height: 100%;
+      width: 48.2568%;
+      left: 0%;
+}
+.Boton__Desencriptar{
+      height: 100%;
+      width: 48.2558%;
+      left: 51.746%;
 }
 
 
+/*MODIFICACIÓN DEL LADO DERECHO*/
+.derecha {
+      position: relative;
+      display: grid;
+      grid-column: 1;
+      grid-row: 3;
+      width: 100%;
+      height: 100%;
+ }
 
+#caja{
+      position: relative;
+      display: flex;
+      width: 89.585%;
+      height: 85.54%;
+      top: 0;
+      left: 5.21%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+#muñeco{
+      display: none;
+}
+#mensajeFinal{
+      position: absolute;
+      display: flex;
+      width: 90.6976%;
+      height: 29px;
+       top: 43%;
+      padding: 0%;
+      left: 4.65188%;
+}
+#mensajeFinal2{
+      position: absolute;
+      display: flex;
+      width: 90.6976%;
+      height: 21.809%;
+      top: 50%;
+      justify-content: center;
+      align-items: center;
+      left: 4.65188%
+      
+}
+#mensajeFinal.ajustar{
+     position: absolute;
+     height: 100%;
+     
+
+}
+     
+.Boton__copiar {
+     position: absolute;
+     width: 90.698%;
+     height: 60%;
+    top: 70.265%;
+     left: 4%;
+     display: none;
+     background: transparent;
+     color: var(--color-Dark-blue);
+
+     height: 67px;
+}
+
+/* MODIFICACION DEL PIE DE LA PAGINA */
+
+
+
+@media screen and (max-width:400px){
+
+     body{
+          display: grid;
+          height: 1028.38px;
+          width: 375px;
+          grid-template-columns: 100%;
+          grid-template-rows: 90.727% 9.273%;
+          margin: 0%;
+    }
+    .cuerpo{
+          display: grid;
+          width: 100%;
+          height: 100%;
+          grid-row: 1;
+          grid-template-columns: 1fr;
+          grid-template-rows: 10.29% auto 29.465999% ;
+    }
+    /*MODIFICACIÓN DEL HEADER*/
+    .header{
+        position: relative;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-row: 1;
+    }
+    .logoalura{
+         position: absolute;
+         width: 8.535%;
+         height: 66.67%;
+         top: 24.36%;
+         left: 5.318%;
+         gap: 0px;
+         opacity: 0px;
+    }
+    
+    
+    /*MODIFICACIÓN DEL LADO IZQUIERDO*/
+    .izquierda{
+         position: relative;
+         display: grid;
+         grid-column: 1;
+         grid-row: 2;
+         width: 100%;
+         
+     }
+    
+    .Ingrese__texto{
+          position: absolute;
+          top: 9.965%;
+          left: 5.%;
+          width: 91.468%;
+          height: 35%;
+          
+        
+    }
+    .izquierda__abajo{
+          display: flex;  
+          flex-direction: column;
+          top: 60%;
+          width: 91.47%;
+          height: 34.16%;
+          left: 4.27%;
+         
+    }
+    .abajo__botones {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height:50%;
+          left: 0;
+          top: 17.71%;
+    }
+    img.vector{
+      width: 16px;
+      height: 16px;
+    }
+    
+     span.terminos{
+          width: 229px;
+          height: 18px;
+          font-family: Inter;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 18px;
+          text-align: left;
+          left: 6%;
+          top: 0%;
+    }
+    .Boton__Encriptar{
+          height: 69.8%;
+          width: 100%;
+          left: 0%;
+          top: 0%;
+    }
+    .Boton__Desencriptar{
+      height: 69.8%;
+      width: 100%;
+      left: 0%;
+      top: 94.795%;
+    }
+    
+    
+    /*MODIFICACIÓN DEL LADO DERECHO*/
+    .derecha {
+          position: relative;
+          display: grid;
+          grid-column: 1;
+          grid-row: 3;
+          width: 100%;
+          height: 100%;
+     }
+    
+    #caja{
+           position: relative;
+           display: flex;
+           width: 87.202%;
+           height: 100;
+           top: 0%;
+           left: 5.21%;
+           flex-direction: column;
+                    
+    }
+    
+    #muñeco{
+          display: none;
+    }
+    #mensajeFinal.mensajeFinal {
+           
+           display: flex;
+           width: 90.6976%;
+           height: 30%;
+           padding: 0%;
+           top: 15%;
+           justify-content: center;
+          
+            
+    }
+         
+    
+    
+     .mensajeFinal2{
+          
+          display: flex;
+          width: 90.6976%;
+          height: 21.809%;
+          top: 50%;
+          justify-content: center;
+          align-items: center;
+          left: 4.65188%
+          
+    }
+    #mensajeFinal.ajustar{
+         position: absolute;
+         height: 100%;
+         
+    
+    }
+         
+    .Boton__copiar {
+         position: absolute;
+         width: 90.698%;
+         height: 60%;
+        top: 70.265%;
+         left: 4%;
+         display: none;
+         background: transparent;
+         color: var(--color-Dark-blue);
+         
+         height: 67px;
+    }
+    
+    /* MODIFICACION DEL PIE DE LA PAGINA */
+#footer.piePagina {
+     position: relative;
+     background-color: #000;
+     width: 100%;
+     height: 100%;
+     grid-column: 1;
+     grid-row: 2;
+     display: flex;
+    justify-content: space-between;
+     align-items: center;
+}
+.logoBalam{
+   width: 10%;
+   height: 50%;
+   display: flex;    
+}
+
+ .pie {
+   color: #fff;
+   margin: 0%;    
+   width: 80%;
+   height: 50%;
+   justify-content: center;
+   align-items: center;  
+   font-size: 24px;
+  
+} 
+     }
+    }

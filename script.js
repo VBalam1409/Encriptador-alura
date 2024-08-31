@@ -1,3 +1,6 @@
+alert ("hola mundo");
+
+
 //constantes
 const ingreseTexto = document.getElementById
 ("ingreseTexto")
